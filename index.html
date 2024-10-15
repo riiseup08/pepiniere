@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_e61df761d1c177bfe4c840df2b2feda1 {
+                #map_54086a4cc88c8b21aafcd090a9f34cc4 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -38,20 +38,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
 </head>
 <body>
     
     
-            <div class="folium-map" id="map_e61df761d1c177bfe4c840df2b2feda1" ></div>
+            <div class="folium-map" id="map_54086a4cc88c8b21aafcd090a9f34cc4" ></div>
         
 </body>
 <script>
     
     
-            var map_e61df761d1c177bfe4c840df2b2feda1 = L.map(
-                "map_e61df761d1c177bfe4c840df2b2feda1",
+            var map_54086a4cc88c8b21aafcd090a9f34cc4 = L.map(
+                "map_54086a4cc88c8b21aafcd090a9f34cc4",
                 {
-                    center: [7.3697, 12.3547],
+                    center: [3.890496980494962, 11.50502398819254],
                     crs: L.CRS.EPSG3857,
                     zoom: 6,
                     zoomControl: true,
@@ -63,42 +65,42 @@
 
         
     
-            var tile_layer_b204862224200c9925aac48e496f6b6a = L.tileLayer(
+            var tile_layer_b85d5b12a1a5791147fd2a4604d0c6a5 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_b204862224200c9925aac48e496f6b6a.addTo(map_e61df761d1c177bfe4c840df2b2feda1);
+            tile_layer_b85d5b12a1a5791147fd2a4604d0c6a5.addTo(map_54086a4cc88c8b21aafcd090a9f34cc4);
         
     
-            var marker_cluster_eff0aaac6a5aa6ba20d5b4edecadb51b = L.markerClusterGroup(
+            var marker_cluster_fdaf37de5642e85e9d3bfaa22e4c272d = L.markerClusterGroup(
                 {}
             );
         
     
-            var marker_68278794dd9024a65bccc0ddc1281b3e = L.marker(
+            var marker_1c6a7146f7085f9f3f3ae52643135975 = L.marker(
                 [3.885101, 11.51285],
                 {}
-            ).addTo(marker_cluster_eff0aaac6a5aa6ba20d5b4edecadb51b);
+            ).addTo(marker_cluster_fdaf37de5642e85e9d3bfaa22e4c272d);
         
     
-        var popup_0d76412faf519478a09cec04b1966624 = L.popup({"maxWidth": 300});
+        var popup_2e995e7d9549a89ed266cefa8723b222 = L.popup({"maxWidth": 300});
 
         
             
-                var html_62a808674331be106086edd2cf3e79f9 = $(`<div id="html_62a808674331be106086edd2cf3e79f9" style="width: 100.0%; height: 100.0%;">     <strong>Région:</strong> Centre<br>     <strong>Département:</strong> Mfoundi<br>     <strong>Arrondissement:</strong> Yaoundé 1<br>     <strong>Date de création:</strong> 2024-10-02 00:00:00<br>     <strong>Nombre de plants:</strong> 30<br>     <img src="https://raw.githubusercontent.com/riiseup08/pepiniere/refs/heads/main/pepiniere1.jpeg" width="200px" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';">     </div>`)[0];
-                popup_0d76412faf519478a09cec04b1966624.setContent(html_62a808674331be106086edd2cf3e79f9);
+                var html_f24a95947247b193b6d633721cab531b = $(`<div id="html_f24a95947247b193b6d633721cab531b" style="width: 100.0%; height: 100.0%;">     <strong>Région:</strong> Centre<br>     <strong>Département:</strong> Mfoundi<br>     <strong>Arrondissement:</strong> Yaoundé 1<br>     <strong>Date de création:</strong> 2024-10-02 00:00:00<br>     <strong>Nombre de plants:</strong> 30<br>     <strong>Coopérative:</strong> Scoops yde<br>     <img src="https://raw.githubusercontent.com/riiseup08/pepiniere/refs/heads/main/pepiniere1.jpeg" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br>     <strong>Lien vidéo:</strong> <a href="https://kc.kobotoolbox.org/media/original?media_file=suivi2025%2Fattachments%2F7d3f3f3a3a8b4bf9900b059529ca5d32%2Fb770956d-75ad-42b9-9d76-e29843e4270a%2Fartisan-13_41_11.mp4" target="_blank">Voir la vidéo</a>     </div>`)[0];
+                popup_2e995e7d9549a89ed266cefa8723b222.setContent(html_f24a95947247b193b6d633721cab531b);
             
         
 
-        marker_68278794dd9024a65bccc0ddc1281b3e.bindPopup(popup_0d76412faf519478a09cec04b1966624)
+        marker_1c6a7146f7085f9f3f3ae52643135975.bindPopup(popup_2e995e7d9549a89ed266cefa8723b222)
         ;
 
         
     
     
-            marker_68278794dd9024a65bccc0ddc1281b3e.bindTooltip(
+            marker_1c6a7146f7085f9f3f3ae52643135975.bindTooltip(
                 `<div>
                      Pépinière de Yaoundé 1
                  </div>`,
@@ -106,7 +108,68 @@
             );
         
     
-            marker_cluster_eff0aaac6a5aa6ba20d5b4edecadb51b.addTo(map_e61df761d1c177bfe4c840df2b2feda1);
+            marker_cluster_fdaf37de5642e85e9d3bfaa22e4c272d.addTo(map_54086a4cc88c8b21aafcd090a9f34cc4);
+        
+    
+            var tile_layer_75bce2a465eebd8b7639ed2c2a29ac16 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_75bce2a465eebd8b7639ed2c2a29ac16.addTo(map_54086a4cc88c8b21aafcd090a9f34cc4);
+        
+    
+            var tile_layer_65c53ae0cccc914577818a82109a3cd2 = L.tileLayer(
+                "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://opentopomap.org\"\u003eOpenTopoMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_65c53ae0cccc914577818a82109a3cd2.addTo(map_54086a4cc88c8b21aafcd090a9f34cc4);
+        
+    
+            var tile_layer_40391c8bf853ffa347351c8ebfa3f19d = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}{r}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e \u0026mdash; Map data \u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_40391c8bf853ffa347351c8ebfa3f19d.addTo(map_54086a4cc88c8b21aafcd090a9f34cc4);
+        
+    
+            var tile_layer_28a1ce98f08b4a40a9dd59b923629e9e = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e \u0026mdash; Map data \u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_28a1ce98f08b4a40a9dd59b923629e9e.addTo(map_54086a4cc88c8b21aafcd090a9f34cc4);
+        
+    
+            var locate_control_ca7eba39254f6444dc06ed22c9c91ec8 = L.control.locate(
+                {}
+            ).addTo(map_54086a4cc88c8b21aafcd090a9f34cc4);
+            
+        
+    
+            var layer_control_00d8b111daf92c068b9ec7a6b437c654_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_75bce2a465eebd8b7639ed2c2a29ac16,
+                    "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png" : tile_layer_65c53ae0cccc914577818a82109a3cd2,
+                    "stamenterrain" : tile_layer_40391c8bf853ffa347351c8ebfa3f19d,
+                    "stamentoner" : tile_layer_28a1ce98f08b4a40a9dd59b923629e9e,
+                },
+                overlays :  {
+                    "macro_element_fdaf37de5642e85e9d3bfaa22e4c272d" : marker_cluster_fdaf37de5642e85e9d3bfaa22e4c272d,
+                },
+            };
+            let layer_control_00d8b111daf92c068b9ec7a6b437c654 = L.control.layers(
+                layer_control_00d8b111daf92c068b9ec7a6b437c654_layers.base_layers,
+                layer_control_00d8b111daf92c068b9ec7a6b437c654_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_54086a4cc88c8b21aafcd090a9f34cc4);
+
         
 </script>
 </html>
