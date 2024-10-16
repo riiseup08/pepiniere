@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_baa653df1b0eadf0247e80a05191800d {
+                #map_2b73e1584f36b702474fa851ebe4baec {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -38,18 +38,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
 </head>
 <body>
     
     
-            <div class="folium-map" id="map_baa653df1b0eadf0247e80a05191800d" ></div>
+             <h3 align="center" style="font-size:20px"><b>Pépinières de Bambou INBAR au Cameroun</b></h3>
+             
+    
+            <div class="folium-map" id="map_2b73e1584f36b702474fa851ebe4baec" ></div>
         
 </body>
 <script>
     
     
-            var map_baa653df1b0eadf0247e80a05191800d = L.map(
-                "map_baa653df1b0eadf0247e80a05191800d",
+            var map_2b73e1584f36b702474fa851ebe4baec = L.map(
+                "map_2b73e1584f36b702474fa851ebe4baec",
                 {
                     center: [7.3697, 12.3547],
                     crs: L.CRS.EPSG3857,
@@ -63,71 +68,42 @@
 
         
     
-            var tile_layer_3b4a145c2b547695d5541fa0cdb27107 = L.tileLayer(
+            var tile_layer_0d8687a38ba678a290f2f2c5405f4ad8 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_3b4a145c2b547695d5541fa0cdb27107.addTo(map_baa653df1b0eadf0247e80a05191800d);
+            tile_layer_0d8687a38ba678a290f2f2c5405f4ad8.addTo(map_2b73e1584f36b702474fa851ebe4baec);
         
     
-            var marker_cluster_03444100c9fda79dde8087e51a91a511 = L.markerClusterGroup(
+            var marker_cluster_0ae02055ad6ffbe3a6d890b641527751 = L.markerClusterGroup(
                 {}
             );
         
     
-            var marker_41f62889a9a74c56d156617a0ebfd365 = L.marker(
-                [3.885101, 11.51285],
-                {}
-            ).addTo(marker_cluster_03444100c9fda79dde8087e51a91a511);
-        
-    
-        var popup_062b7bb45418347a4fd41fc476a2d51a = L.popup({"maxWidth": 300});
-
-        
-            
-                var html_21dde5b580aa549e7c5f150f6ff9ded9 = $(`<div id="html_21dde5b580aa549e7c5f150f6ff9ded9" style="width: 100.0%; height: 100.0%;">     <strong>Région:</strong> nan<br>     <strong>Département:</strong> Mfoundi<br>     <strong>Arrondissement:</strong> Yaoundé 1<br>     <strong>Date de création:</strong> 2024-10-02 00:00:00<br>     <strong>Nombre de plants:</strong> 30<br>     <img src="https://kc.kobotoolbox.org/media/original?media_file=suivi2025%2Fattachments%2F7d3f3f3a3a8b4bf9900b059529ca5d32%2Fb770956d-75ad-42b9-9d76-e29843e4270a%2FPEPI-13_41_3.jpg" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br><img src="https://via.placeholder.com/200x150?text=Image+non+disponible" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br><img src="https://via.placeholder.com/200x150?text=Image+non+disponible" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br><img src="https://via.placeholder.com/200x150?text=Image+non+disponible" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br>     </div>`)[0];
-                popup_062b7bb45418347a4fd41fc476a2d51a.setContent(html_21dde5b580aa549e7c5f150f6ff9ded9);
-            
-        
-
-        marker_41f62889a9a74c56d156617a0ebfd365.bindPopup(popup_062b7bb45418347a4fd41fc476a2d51a)
-        ;
-
-        
-    
-    
-            marker_41f62889a9a74c56d156617a0ebfd365.bindTooltip(
-                `<div>
-                     Pépinière de Yaoundé 1
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_26b54df18166ff7abe1bb0a3b5a5b9db = L.marker(
+            var marker_42d243ba6c2cc50afc3b1851a1dc0811 = L.marker(
                 [8.198198, 13.634834],
                 {}
-            ).addTo(marker_cluster_03444100c9fda79dde8087e51a91a511);
+            ).addTo(marker_cluster_0ae02055ad6ffbe3a6d890b641527751);
         
     
-        var popup_a018b3d3a73da630eddfb6b24854ef7a = L.popup({"maxWidth": 300});
+        var popup_b24af186d851a7560d20d8cc6ba9852e = L.popup({"maxWidth": 300});
 
         
             
-                var html_a87daf2c60124f48d2705af23a4a7a36 = $(`<div id="html_a87daf2c60124f48d2705af23a4a7a36" style="width: 100.0%; height: 100.0%;">     <strong>Région:</strong> nord<br>     <strong>Département:</strong> Mayo-rey<br>     <strong>Arrondissement:</strong> Tcholliré<br>     <strong>Date de création:</strong> 2023-11-21 00:00:00<br>     <strong>Nombre de plants:</strong> 300<br>     <img src="https://kc.kobotoolbox.org/media/original?media_file=suivi2025%2Fattachments%2F7d3f3f3a3a8b4bf9900b059529ca5d32%2F16a7536d-4f6c-4c3b-93fb-21df14816fae%2FIMG_20240919_080847_193-15_22_20.jpg" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br><img src="https://via.placeholder.com/200x150?text=Image+non+disponible" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br><img src="https://via.placeholder.com/200x150?text=Image+non+disponible" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br><img src="https://via.placeholder.com/200x150?text=Image+non+disponible" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br>     </div>`)[0];
-                popup_a018b3d3a73da630eddfb6b24854ef7a.setContent(html_a87daf2c60124f48d2705af23a4a7a36);
+                var html_d396f45ff02f171ea405f71a5f7110f7 = $(`<div id="html_d396f45ff02f171ea405f71a5f7110f7" style="width: 100.0%; height: 100.0%;">     <strong>Région:</strong> nord<br>     <strong>Département:</strong> Mayo-rey<br>     <strong>Arrondissement:</strong> Tcholliré<br>     <strong>Date de création:</strong> 2023-11-21 00:00:00<br>     <strong>Nombre de plants:</strong> 300<br>     <strong>Lien vidéo:</strong> <a href="https://kc.kobotoolbox.org/media/original?media_file=suivi2025%2Fattachments%2F7d3f3f3a3a8b4bf9900b059529ca5d32%2F16a7536d-4f6c-4c3b-93fb-21df14816fae%2FVID_20241015_161443-16_14_49.mp4" target="_blank">Voir la vidéo</a>     <img src="https://kc.kobotoolbox.org/media/original?media_file=suivi2025%2Fattachments%2F7d3f3f3a3a8b4bf9900b059529ca5d32%2F16a7536d-4f6c-4c3b-93fb-21df14816fae%2FIMG_20240919_080847_193-15_22_20.jpg" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br><img src="https://via.placeholder.com/200x150?text=Image+non+disponible" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br><img src="https://via.placeholder.com/200x150?text=Image+non+disponible" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br><img src="https://via.placeholder.com/200x150?text=Image+non+disponible" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br>     </div>`)[0];
+                popup_b24af186d851a7560d20d8cc6ba9852e.setContent(html_d396f45ff02f171ea405f71a5f7110f7);
             
         
 
-        marker_26b54df18166ff7abe1bb0a3b5a5b9db.bindPopup(popup_a018b3d3a73da630eddfb6b24854ef7a)
+        marker_42d243ba6c2cc50afc3b1851a1dc0811.bindPopup(popup_b24af186d851a7560d20d8cc6ba9852e)
         ;
 
         
     
     
-            marker_26b54df18166ff7abe1bb0a3b5a5b9db.bindTooltip(
+            marker_42d243ba6c2cc50afc3b1851a1dc0811.bindTooltip(
                 `<div>
                      Pépinière de Tcholliré
                  </div>`,
@@ -135,28 +111,28 @@
             );
         
     
-            var marker_c44b3004e6bdd3d2d59e9eee4bd5fcbe = L.marker(
-                [3.877865, 11.513451],
+            var marker_d6464e5b68905673fe9ab3e36565f7e2 = L.marker(
+                [3.885101, 11.51285],
                 {}
-            ).addTo(marker_cluster_03444100c9fda79dde8087e51a91a511);
+            ).addTo(marker_cluster_0ae02055ad6ffbe3a6d890b641527751);
         
     
-        var popup_e66768a0fe2963cb8441cbfee1f6d74d = L.popup({"maxWidth": 300});
+        var popup_2cad6af7dd8678a0afa456e0199e8ffc = L.popup({"maxWidth": 300});
 
         
             
-                var html_bb503dccf049c54807f268196aadf951 = $(`<div id="html_bb503dccf049c54807f268196aadf951" style="width: 100.0%; height: 100.0%;">     <strong>Région:</strong> centre<br>     <strong>Département:</strong> Mfoundi<br>     <strong>Arrondissement:</strong> yaoundé 1<br>     <strong>Date de création:</strong> 2024-10-16 00:00:00<br>     <strong>Nombre de plants:</strong> 30<br>     <img src="https://kc.kobotoolbox.org/media/original?media_file=suivi2025%2Fattachments%2F7d3f3f3a3a8b4bf9900b059529ca5d32%2F6c770468-3576-4251-835d-d6ab3e0801c3%2Fpepiniere-10_0_29.jpg" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br><img src="https://kc.kobotoolbox.org/media/original?media_file=suivi2025%2Fattachments%2F7d3f3f3a3a8b4bf9900b059529ca5d32%2F6c770468-3576-4251-835d-d6ab3e0801c3%2FPEPI-10_0_43.jpg" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br><img src="https://kc.kobotoolbox.org/media/original?media_file=suivi2025%2Fattachments%2F7d3f3f3a3a8b4bf9900b059529ca5d32%2F6c770468-3576-4251-835d-d6ab3e0801c3%2Ffamily_pic-10_0_50.jpg" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br><img src="https://kc.kobotoolbox.org/media/original?media_file=suivi2025%2Fattachments%2F7d3f3f3a3a8b4bf9900b059529ca5d32%2F6c770468-3576-4251-835d-d6ab3e0801c3%2Fremise_cadeau-10_1_6.jpg" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br>     </div>`)[0];
-                popup_e66768a0fe2963cb8441cbfee1f6d74d.setContent(html_bb503dccf049c54807f268196aadf951);
+                var html_c6996b80166834a56e1fe90c517490ff = $(`<div id="html_c6996b80166834a56e1fe90c517490ff" style="width: 100.0%; height: 100.0%;">     <strong>Région:</strong> centre<br>     <strong>Département:</strong> Mfoundi<br>     <strong>Arrondissement:</strong> yaoundé 1<br>     <strong>Date de création:</strong> 2024-10-16 00:00:00<br>     <strong>Nombre de plants:</strong> 30<br>     <strong>Lien vidéo:</strong> <a href="https://kc.kobotoolbox.org/media/original?media_file=suivi2025%2Fattachments%2F7d3f3f3a3a8b4bf9900b059529ca5d32%2F6c770468-3576-4251-835d-d6ab3e0801c3%2Fartisan-10_2_13.mp4" target="_blank">Voir la vidéo</a>     <img src="https://kc.kobotoolbox.org/media/original?media_file=suivi2025%2Fattachments%2F7d3f3f3a3a8b4bf9900b059529ca5d32%2F6c770468-3576-4251-835d-d6ab3e0801c3%2Fpepiniere-10_0_29.jpg" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br><img src="https://kc.kobotoolbox.org/media/original?media_file=suivi2025%2Fattachments%2F7d3f3f3a3a8b4bf9900b059529ca5d32%2F6c770468-3576-4251-835d-d6ab3e0801c3%2FPEPI-10_0_43.jpg" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br><img src="https://kc.kobotoolbox.org/media/original?media_file=suivi2025%2Fattachments%2F7d3f3f3a3a8b4bf9900b059529ca5d32%2F6c770468-3576-4251-835d-d6ab3e0801c3%2Ffamily_pic-10_0_50.jpg" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br><img src="https://kc.kobotoolbox.org/media/original?media_file=suivi2025%2Fattachments%2F7d3f3f3a3a8b4bf9900b059529ca5d32%2F6c770468-3576-4251-835d-d6ab3e0801c3%2Fremise_cadeau-10_1_6.jpg" width="200px" style="margin:5px;" onerror="this.onerror=null;this.src='https://via.placeholder.com/200x150?text=Image+non+disponible';"><br>     </div>`)[0];
+                popup_2cad6af7dd8678a0afa456e0199e8ffc.setContent(html_c6996b80166834a56e1fe90c517490ff);
             
         
 
-        marker_c44b3004e6bdd3d2d59e9eee4bd5fcbe.bindPopup(popup_e66768a0fe2963cb8441cbfee1f6d74d)
+        marker_d6464e5b68905673fe9ab3e36565f7e2.bindPopup(popup_2cad6af7dd8678a0afa456e0199e8ffc)
         ;
 
         
     
     
-            marker_c44b3004e6bdd3d2d59e9eee4bd5fcbe.bindTooltip(
+            marker_d6464e5b68905673fe9ab3e36565f7e2.bindTooltip(
                 `<div>
                      Pépinière de yaoundé 1
                  </div>`,
@@ -164,7 +140,58 @@
             );
         
     
-            marker_cluster_03444100c9fda79dde8087e51a91a511.addTo(map_baa653df1b0eadf0247e80a05191800d);
+            marker_cluster_0ae02055ad6ffbe3a6d890b641527751.addTo(map_2b73e1584f36b702474fa851ebe4baec);
+        
+    
+            var tile_layer_a6434c3fd66ce2778a663cf458899df8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a6434c3fd66ce2778a663cf458899df8.addTo(map_2b73e1584f36b702474fa851ebe4baec);
+        
+    
+            var tile_layer_ac8033355de7d3738fbb00891aa6ffb3 = L.tileLayer(
+                "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; OpenTopoMap contributors", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ac8033355de7d3738fbb00891aa6ffb3.addTo(map_2b73e1584f36b702474fa851ebe4baec);
+        
+    
+            var tile_layer_284bfd656ed0c6acc1d0ac08140ed974 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "\u0026copy; Esri, Maxar, Earthstar Geographics, and the GIS User Community", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_284bfd656ed0c6acc1d0ac08140ed974.addTo(map_2b73e1584f36b702474fa851ebe4baec);
+        
+    
+            var locate_control_97d7bc83f43d8ab83a3b4754825398a2 = L.control.locate(
+                {}
+            ).addTo(map_2b73e1584f36b702474fa851ebe4baec);
+            
+        
+    
+            var layer_control_667c6a520b518d0508e09798f4499be1_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a6434c3fd66ce2778a663cf458899df8,
+                    "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png" : tile_layer_ac8033355de7d3738fbb00891aa6ffb3,
+                    "Esri World Imagery" : tile_layer_284bfd656ed0c6acc1d0ac08140ed974,
+                },
+                overlays :  {
+                    "macro_element_0ae02055ad6ffbe3a6d890b641527751" : marker_cluster_0ae02055ad6ffbe3a6d890b641527751,
+                },
+            };
+            let layer_control_667c6a520b518d0508e09798f4499be1 = L.control.layers(
+                layer_control_667c6a520b518d0508e09798f4499be1_layers.base_layers,
+                layer_control_667c6a520b518d0508e09798f4499be1_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_2b73e1584f36b702474fa851ebe4baec);
+
         
 </script>
 </html>
